@@ -17,4 +17,4 @@ RUN python -m pip install --no-cache-dir flask>=2.0 selenium==4.0.0 beautifulsou
 EXPOSE 3002
 
 # Run app.py when the container launches
-CMD ["python", "app.py"]
+CMD ["python", "api.py"]
