@@ -11,7 +11,7 @@ ADD . /app
 RUN python -m pip install --upgrade pip
 
 # Install any needed packages specified in requirements.txt
-RUN pip install --no-cache-dir flask==2.0.1 selenium==4.0.0 beautifulsoup4==4.10.0 pyvirtualdisplay==2.2 Werkzeug==0.16.1
+RUN python -m pip install --no-cache-dir flask>=2.0 selenium==4.0.0 beautifulsoup4==4.10.0 pyvirtualdisplay==2.2 Werkzeug==0.16.1
 
 # Make port 3002 available to the world outside this container
 EXPOSE 3002
