@@ -10,6 +10,7 @@ COPY . /app
 # Install any needed packages specified in requirements.txt
 RUN apt-get update && \
     apt-get install -y \
+        curl \
         chromium \
         chromium-driver \
         libglib2.0-0 \
